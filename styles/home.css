@@ -207,7 +207,7 @@ h1 span{
     height: 92vh;
     width: 100%;
     padding: 40px 0px;
-    background: url(/assets/testBG.png) no-repeat;
+    background: url(../assets/testBG.png) no-repeat;
     background-position: center;
     background-size: cover;
 }
@@ -246,7 +246,7 @@ h1 span{
     padding: 20px;
     height: 300px;
     width:500px;
-    background: url(/assets/card.svg) no-repeat;
+    background: url(../assets/card.svg) no-repeat;
     background-size: cover;
     position: relative;
     filter: drop-shadow(0px 4px 10px rgba(255, 219, 87, 0.153));
