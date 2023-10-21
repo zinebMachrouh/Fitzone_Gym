@@ -36,6 +36,9 @@ nav a{
     color: #fff;
     text-decoration: none;
 }
+/* .active{
+    font-weight: 600;
+} */
 .sub{
     color: #1e1e1e;
     width: 130px;
@@ -53,6 +56,56 @@ main{
     height: fit-content;
     width: 100%;
     background-color: #1e1e1e;
+}
+.open{
+    background-color: #1E1E1E;
+    color: #fff;
+    font-size: 35px;
+    border: none;
+    outline: none;
+    display: none;
+}
+.open:hover{
+    opacity: 0.8;
+    transition: all ease .3s;
+}
+.sidenav {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 12;
+    top: 0;
+    right: 0;
+    background-color: #1E1E1E;
+    overflow-x: hidden;
+    padding-top: 60px;
+    font-family: 'Poppins';
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 0.5s;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav a:hover, .sidenav .close:hover{
+    color: #FFCB05;
+    transition: all ease .3s;
+}
+.sidenav .close {
+    align-self: flex-end;
+    background-color: #1E1E1E;
+    border: none;
+    color: #fff;
+    outline: none;
+    font-size: 36px;
+    margin-right: 50px;
 }
 footer{
     font-family: 'Poppins', sans-serif;
@@ -77,4 +130,11 @@ footer ul a{
     footer{
         flex-direction: column;
     }
+    nav{
+        display: none;
+    }
+    .open{
+        display: block;
+    }
+
 }
