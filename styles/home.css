@@ -176,10 +176,6 @@ h1 span{
     justify-content: center;
     gap: 15px;
 }
-.title h2:nth-child(1){
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #fff;
-}
 .title h2:nth-child(2){
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #FFCB05;
@@ -192,7 +188,6 @@ h1 span{
     width: 100%;
 }
 .card{
-    width: fit-content;
     padding: 20px;
     height: 300px;
     width:500px;
@@ -269,11 +264,6 @@ h1 span{
 .mini h4{
     font-size: 20px;
 }
-
-
-
-
-
 
 
 @keyframes right-to-left {
@@ -363,4 +353,8 @@ h1 span{
         bottom:23%;
         right: 4%;
     }
+    #test .title{
+        font-size: 29px;
+    }
+    
 }
