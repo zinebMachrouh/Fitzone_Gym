@@ -119,6 +119,18 @@ label h4{
     color: #1E1E1E;
     text-transform: capitalize;
 }
+.error{
+    border: 1px solid #e63946;
+    color: #e63946;
+}
+.success{
+    border: #38b000 1px solid;
+    color: #fff;
+}
+label span{
+    display: none;
+    color: #e63946;
+}
 @media screen and (max-width:700px){
     form{
         width: 450px;

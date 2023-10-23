@@ -41,30 +41,35 @@
                 <div class="med">
                     <label for="fname">
                         <h4>First Name</h4>
-                        <input type="text" name="fname" id="fname" placeholder="Enter First Name" required>
+                        <input type="text" name="fname" id="fname" placeholder="Enter First Name" onchange="checkFname()" required>
+                        <span>Invalid Field</span>
                     </label>
                     <label for="lname">
                         <h4>Last Name</h4>
-                        <input type="text" name="lname" id="lname" placeholder="Enter Last Name" required>
+                        <input type="text" name="lname" id="lname" placeholder="Enter Last Name" required onchange="checkLname()">
+                        <span>Invalid Field</span>
                     </label>
                 </div>
                 <div class="big">
                     <label for="pNum">
                         <h4>Phone Number</h4>
-                        <input type="number" name="pNum" id="pNum" placeholder="Ex : +212611223344" required>
+                        <input type="number" name="pNum" id="pNum" placeholder="Ex : +212611223344" required onchange="checkNum()">
+                        <span>Invalid Field</span>
                     </label>
                     <label for="cin">
                         <h4>CIN</h4>
-                        <input type="text" name="cin" id="cin" placeholder="Ex : AS5205" required>
+                        <input type="text" name="cin" id="cin" placeholder="Ex : AS5205" required onchange="checkCin()">
+                        <span>Invalid Field</span>
                     </label>
                 </div>
                 <label for="email">
                     <h4>Email</h4>
-                    <input type="email" name="email" id="email" placeholder="Ex : liam21@gmail.com" required>
+                    <input type="email" name="email" id="email" placeholder="Ex : liam21@gmail.com" required onchange="checkEmail()">
+                    <span>Invalid Field</span>
                 </label>
                 <div class="btns">
                     <button type="reset">Cancel</button>
-                    <button type="button">Submit</button>
+                    <button type="button" >Submit</button>
                 </div>
             </form>
         </div>
