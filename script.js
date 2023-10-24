@@ -12,7 +12,6 @@ questions.forEach((question) => {
     question.addEventListener('click', () => {
         const answer = question.nextElementSibling;
         const chev = question.lastElementChild;
-        console.log(chev);
         if (answer.style.display === 'flex') {
             answer.style.display = 'none';
             chev.style.transform = "rotate(0deg)";

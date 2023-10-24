@@ -152,18 +152,28 @@ h1 span{
     bottom: 45%;
     right: 12%;
 }
-#test, #faq{
+#test{
     background-color: #1E1E1E;
-    height: 92vh;
+    height: fit-content;
     width: 100%;
-    padding: 40px 0px;
+    padding: 100px 0px;
     background: url(../assets/testBG.png) no-repeat;
     background-position: center;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
 }
 #faq{
-    height: fit-content;
     border-top: 5px solid #FFCB05;
+    background-color: #1E1E1E;
+    height: fit-content;
+    width: 100%;
+    padding: 100px 0px;
+    background: url(../assets/testBG.png) no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .title{
     color: #1e1e1e;
@@ -182,10 +192,12 @@ h1 span{
 }
 .cards{
     display: flex;
-    margin-top: 200px;
+    margin-top: 150px;
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
+    gap: 70px;
+    flex-wrap: wrap;
 }
 .card{
     padding: 20px;
@@ -355,6 +367,9 @@ h1 span{
     }
     #test .title{
         font-size: 29px;
+    }
+    .cards{
+        margin-top: 100px;
     }
     
 }
