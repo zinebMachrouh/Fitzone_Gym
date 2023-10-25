@@ -49,26 +49,30 @@ function checkLname(){
 
 function checkNum() {
     let pNum = document.getElementById("pNum");
-    let numRegex = /^\+212\d{9}$/;
+    let numRegex = /^\+212\d{9}$|^\d{10}$/;
 
     if (numRegex.test(pNum.value)) {
         pNum.classList.add("success");
+        pNum.classList.remove("error");
         pNum.nextElementSibling.style.display = "none";
     }else{
         pNum.classList.add("error");
+        pNum.classList.remove("success");
         pNum.nextElementSibling.style.display = "block";
     }
 }
 
 function checkCin() {
     let cin = document.getElementById("cin");
-    let cinRegex = /^[A-Z]{2}\d{5,6}$/;
+    let cinRegex = /^[A-Z]{1,2}\d{5,6}$/;
 
     if (cinRegex.test(cin.value)) {
         cin.classList.add("success");
+        cin.classList.remove("error");
         cin.nextElementSibling.style.display = "none";
     }else{
         cin.classList.add("error");
+        cin.classList.remove("success");
         cin.nextElementSibling.style.display = "block";
     }
 }
@@ -79,9 +83,11 @@ function checkEmail() {
 
     if (emailRegex.test(email.value)) {
         email.classList.add("success");
+        email.classList.remove("error");
         email.nextElementSibling.style.display = "none";
     }else{
         email.classList.add("error");
+        email.classList.remove("success");
         email.nextElementSibling.style.display = "block";
     }
 }

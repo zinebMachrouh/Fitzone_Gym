@@ -16,10 +16,10 @@
         <nav>
             <a href="#main" class="active">Home</a>
             <a href="#test">Testimonials</a>
-            <a href="/html/programs.html">Programs</a>
+            <a href="./html/programs.html">Programs</a>
             <a href="#faq">FAQ</a>
-            <a href="#">About</a>
-            <a href="html/plans.html" class="sub">Subscribe</a>
+            <a href="./html/about.html">About</a>
+            <a href="./html/plans.html" class="sub">Subscribe</a>
         </nav>
         <button type="button" class="open" onclick="openNav()">&#9776;</button>
     </header>
@@ -28,10 +28,10 @@
         <div class="container">
             <a href="#main">Home</a>
             <a href="#test">Testimonials</a>
-            <a href="/html/programs.html">Programs</a>
+            <a href="./html/programs.html">Programs</a>
             <a href="#faq">FAQ</a>
-            <a href="#">About</a>
-            <a href="/html/plans.html">Subscribe</a>
+            <a href="./html/about.html">About</a>
+            <a href="./html/plans.html">Subscribe</a>
         </div>
     </div>
     <main>
@@ -41,7 +41,7 @@
                     <h1>come & make <br>your dream body <br>with <span>fitzone</span></h1>
                     <div class="left-btns">
                         <a href="#">Get started</a>
-                        <button type="button"><i class="bi bi-play-fill"></i><span>Watch Video</span></button>
+                        <button type="button" onclick="document.getElementById('modal').style.display='flex'"><i class="bi bi-play-fill"></i><span>Watch Video</span></button>
                     </div>
                 </div>
                 <div class="right">
@@ -59,6 +59,9 @@
                         <span>Expert Trainers</span>
                     </div>
                 </div>
+                <div id="modal">
+                    <button type="button" onclick="document.getElementById('modal').style.display='none'">&times;</button>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/n6SS9z3077Q?si=kOxfTW0dtbuQtKUl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                </div>
             </div>
             <div id="scroll-container">
                 <div id="scroll-text">🗲 If it doesn't challenge you, it won't change you 🗲  If it doesn't challenge you, it won't change you 🗲  If it doesn't challenge you, it won't change you 🗲 <div>
